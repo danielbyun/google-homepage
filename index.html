@@ -24,40 +24,342 @@
                 
                 background-color: #FAFAFA;
                 margin: 0px;
+                border: 1px solid lightgrey;
+                padding-bottom: 0px;
+                margin-bottom: -3px;
+            }
+            
+            .navbar-elements {
+                
+                margin-top: -20px;
+                margin-bottom: 50px;
+                
+            }
+            
+            #logo {
+                
+                margin-left: -10px;
+                
+            }
+            
+            #search {
+                
+                width: 32%;
+                height: 45px;
+                border-radius: 0 !important;
+                
+            }
+            
+            #sign-in {
+                
+                margin-top: 15px;
+                                border-radius: 2px !important;
+                    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+                font-weight: bold;
+                    border: 1px solid #4285f4;
+                padding: 5px 12px;
+                float: right;
+                
+            }
+            
+            form {
+                
+                width: 100%;
+                margin: auto;
+                
+            }
+            
+            .navbar-top {
+                
+                margin-top: -15px;
+                
+            }
+            
+            .white {
+                
+                background-color: white;
+                border-right: 1px lightgrey solid;
+                border-top: 1px lightgrey solid;
+                border-bottom: 1px lightgrey solid;
+                padding: 9px 20px;
+                position: relative;
+                top: -0.53em;
+                left: -10px;
+                
+            }
+            
+            input {
+                
+                outline: none;
+                
+            }
+            
+            #glass {
+                
+                margin-left: 1em;
+                
+            }
+            
+            #menu {
+                
+                margin-left: 89%;
+                clear: right;
+                
+            }
+            
+            #user {
+                
+                margin-top: -12px;
+                
+            }
+            
+            .no-bottom-border {
+                
+                border-bottom: none;
+                
+            }
+            
+            .no-top-border {
+                
+                border-top: none;
+                
+            }
+            
+            #nav-bar {
+                
+                width: 36.5%;
+                
+            }
+            
+            ul {
+                
+                list-style-type: none;
+                margin-left: 7em;
+            }
+            
+            .nav-button {
+                
+                display: inline-block;
+                padding: 0 15px 15px 15px;
+                margin-top: 0;
+                margin-bottom: -.1em;
+                color: #808080;
+                font-size: 13px;
+                
+            }
+            
+            .active {
+                
+                font-weight: 500;
+                color: dodgerblue;
+                padding-bottom: 12px;
+                border-bottom: 3px solid #4285f4;
+                color: #4285f4;
+                font-weight: bold;
+            }
+            
+            .right {
+                
+                float: right;
+                
+            }
+            
+            .shadow {
+                
+                box-shadow: 0 4px 2px -2px #DCDCDC;
+                
+            }
+            
+            #resultBar {
+                
+                margin-left: 8.6%;
+                font-size: 12px;
+                color: #808080;
+                
+            }
 
+            #resultsCol {
+                
+                margin-top: 20px;
+                margin-left: 8.6%;
+                width: 34%;
+                
+            }
+            
+            #results {
+                
+                display: block;
+                margin-bottom: 25px;
+                
             }
             
             .left {
                 
-                float: left;
+                text-align: left;
                 
             }
         
-            .searchBar {
+            h3 {
                 
-                width: 300px;
-                height: 25px;
+                font-weight: 400;
+                font-size: 18px;
+                margin-bottom: -1px;
+            }
+            
+            a {
+                
+                color: #1A0DB0;
                 
             }
             
+            p {
+                
+                font-size: 13.5px;
+                
+            }
+            
+            .link {
+                
+                color: #006621;
+                
+            }
+            
+            .bold-text {
+                
+                color: dimgrey;
+                font-weight: 600;
+                
+            }
+            
+            .bold-link {
+                
+                color: #006621;
+                font-weight: 600;
+                
+            }
+            
+
         </style>
         
         <title>
-        Google Post Search Page
+        
+            Google Post Search Page
+        
         </title>
         
     </head>
     
     <body>
-
-        <div class="navbar">
-            <img height = "44" width = "120"class="left" src="">
-                <input class="left searchBar" type="text"></input>
-                <form class="form-inline left my-2 my-lg-0">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Sign In</button>
-                </form>
+        
+        <!-- top navbar -->
+        <div class="bg-faded">
+                
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded no-bottom-border">
+ 
+            <img id="logo" class="navbar-top" src="logo_420_color_2x.png" height="100" width="140">
+  
+            <form class="form-inline">
+    
+                <input class="form-control mr-sm-2 navbar-top shadow" id="search" type="text">
+                
+                <a href="">
+                    
+                    <div class="white shadow">
+                
+                    <img id="mic" src="google%20mic.png" height="24.5" width="25">
+                        
+                    <img id="glass" src="magnifying%20glass.png" height="20" width="20">
+    
+                    </div>
+                    
+                </a>
+                                
+                    <div id="user" class="col">
+                    
+                        <a href="">
+                            
+                            <img id="menu" src="menu.png">
+                        
+                        </a>
+                        
+                        <a href="">
+                            
+                            <button class="btn btn-primary btn-sm my-2 my-sm-0" id="sign-in" type="submit">Sign In</button>
+                        
+                        </a>
+                                                
+                    </div>                    
+                  
+            </form>
+              
+            </nav>
+            
+        </div>
+                
+            <!-- second top bar with options -->
+        <div class="bg-faded">
+        
+            <ul id="nav-bar">
+            
+                <li class="nav-button active">All</li>
+            
+                <li class="nav-button">News</li>
+            
+                <li class="nav-button">Images</li>
+                
+                <li class="nav-button">Videos</li>
+                
+                <li class="nav-button">Maps</li>
+                
+                <li class="nav-button">More</li>
+                
+                <li class="nav-button right">Tools</li>
+                
+                <li class="nav-button right">Settings</li>
+            
+            </ul>
+    
         </div>
         
+        <div id="resultBar">
+            About 12,400,000 results (0.59 seconds)
+        </div>
+        
+        <div id="resultsCol" class="left">
+        
+            <div id="results">
+            
+                <a href=""><h3>webdev: reddit for web developers</h3></a>
+            
+                <a class="link" href="">https://www.reddit.com/r/<span class="bold-link">webdev/</span> <img></a>
+           
+                <p> Dev Tools Tricks: Store objects and elements as variables in the console (dev.to). submitted ... At what point can I apply to be a <span class="bold-text">WebDev</span> and feel good about it?</p>
+        
+            </div>        
+           
+            <div id="results">
+           
+                <a href=""><h3>Web development - Wikipedia</h3></a>
+           
+                <a class="link" href="">https:/en.wikipedia.org/wiki/<span class="bold-link">Web_development </span><img></a>
+           
+                <p><span class="bold-text">Web development</span> is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+                <p>Web development tools - Web design - Web application development</p>
+       
+            </div>        
+           
+            <div id="results">
+            
+                <a href=""><h3>Web Developer :: Add-ons for Firefox</h3></a>
+           
+                <a class="link" href="">https://addons.mozilla.org > Add-ons for Firefox > Extensions <img></a>
+          
+                <p>The <span class="bold-text">Web Developer</span> extension adds various <span class="bold-text">web developer</span> tools to the brower. Only with Firefox - Get Firefox Now! This add-on is not compatible with your ...</p>
+        
+            </div>
+        
+        </div>            
+            
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
